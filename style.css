@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: "anonymous";
+    src: url("fonts/anonymous_pro.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "nixieone";
+    src: url("fonts/nixieone.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "sourcecode";
+    src: url("fonts/sourcecodepro.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "marvel";
+    src: url("fonts/marvel.ttf") format("truetype");
+}
+
+body{
+    background-color: #ffffff;
+    font-family: anonymous, sourcecode, courier;
+    width: 100%;
+    height: 100%;
+}
+
+h1, h2{
+    color: #272727;
+    margin-top: 6%;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-family: anonymous, sourcecode, courier;
+}
+
+h3{
+    color: #272727;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    font-size: 38px;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-family: nixieone, anonymous, courier; 
+}
+
+h4{
+    color: #272727;
+    font-size: 28px;
+    text-align: left;
+    font-style: normal;
+    font-weight: normal;
+    font-family: marvel, nixieone, anonymous, sourcecode, courier;   
+}
+
+h5{
+    color: #272727;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-family: anonymous, sourcecode, courier;   
+    
+}
+
+h6{
+    color: #272727;
+    font-size: 16px;
+    text-align: left;
+    font-style: normal;
+    font-weight: normal;
+    font-family: anonymous, sourcecode, courier;
+    margin-top: 4%;
+    
+}
+
+p{
+    color: #272727;
+    margin-top: 1%;
+    text-align: justify;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: anonymous, sourcecode, courier;
+    text-indent: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: #6573A6;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#wrapper{
+    margin-left: 15%;
+    margin-right: 15%;
+    min-width: 350px;
+}
+
+header{
+    height: 100px;
+    border-bottom: solid 2px #808080;
+}
+
+header h1.title{
+    font-size: 38px;
+    font-family: anonymous, courier;
+    text-align: center;
+    margin-top: 4%;
+    font-weight: normal;
+}
+
+header h1.subtitle{
+    font-size: 20px;
+    margin-top: 0;
+    font-family: marvel, anonymous, courier;
+    font-style: normal;
+    text-align: center;
+    font-weight: normal;
+}
+
+ul{
+    list-style: none; 
+}
+
+li{
+    padding-bottom: 1%;
+}
+
+dl{
+    padding-bottom: 3%;
+}
+
+dt{
+    padding-top: 2%;
+}
+
+dd{
+    padding-left: 3%;
+}
+
+/*-------navmenu--------*/
+
+ul#navmenu{
+    position: relative;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+ul#navmenu li{
+    display: inline-block;
+}
+
+ul#navmenu a{
+    display: block;
+    width: auto;
+    text-decoration: none;
+    padding: 5px 5px 0 5px;
+    color: #727272;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: courier;
+}
+
+ul#navmenu li:hover > a{
+    color: #272727;
+}
+
+/*--------submenu----------*/
+
+ul#submenu{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+}
+
+ul#submenu li{
+    padding: 2px 5px;
+    display: block;
+}
+
+ul#navmenu li:hover ul{
+    display: block;
+}
+
+ul#submenu a{
+    width: auto;
+    display: block;
+    text-decoration: none;
+    padding: 0px;
+    color: #727272;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: courier;
+    text-align: left;
+}
+
+/*---------section---------*/
+div.link{
+    margin: 10% 0 8% 0;
+    border-bottom: 1px;
+}
+
+.link p{
+    text-indent: 0;
+    text-align: left;
+}
+
+/*--------form------------*/
+
+div#form{
+    margin-top: 20%;
+    margin-bottom: 5%;
+}
+
+#form form{
+    margin-left: 3%;
+    margin-bottom: 4%;
+    display: block;
+}
+
+label{
+    margin-bottom: 1%;
+}
+
+input{
+    margin-bottom: 2%;
+}
+
+#form ul{
+    margin-top: 3%;
+}
+
+#form li{
+    margin-bottom: 1%;
+}
+
+/*---------footer---------*/
+
+footer{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+footer div{
+    height: 40px;
+    border-top: 2px solid #808080;
+}
